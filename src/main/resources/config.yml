@@ -1,0 +1,24 @@
+###################################
+#                                 #
+#         CustomsMessage          #
+#          Version 1.3            #
+###################################
+
+#If you don't know what to do, join our discord, where we will give you advice.
+# https://discord.gg/G8NSqmXt3P
+
+# Used to let the plugin determine if your config is up-to-date, so a
+# warning can be printed in the server console. Only edit this if you
+# know what you are doing, or have just updated your config to the
+# newest version.
+config-version: '1.2'
+
+#Commands/Permissions:
+
+#/reload message.reload
+
+#Edit your own join and leave message!
+join-message: "&a[+] %player%"
+leave-message: "&c[-] %player%"
+Reload: "&7Reload plugin was successful."
+Prefix: "&e[&6CustomsMessage&e]"
