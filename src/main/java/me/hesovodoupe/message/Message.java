@@ -1,6 +1,5 @@
 package me.hesovodoupe.message;
 
-import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Message extends JavaPlugin {
@@ -28,6 +27,14 @@ public final class Message extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new LeaveListener(this), this);
         //register Join and Leave
 
+        new UpdateCheck ( this , 113825 ) . getVersion ( version -> {
+            if ( this . getDescription ( ) . getVersion ( ) . equals ( version ) ) {
+                getLogger ( ) . info ( "There is not a new update available." ) ;
+            } else {
+                getLogger ( ) . info ( "There is a new update available." ) ;
+                //Update check plugin
+            }
+        } ) ;
     }
 
     @Override
