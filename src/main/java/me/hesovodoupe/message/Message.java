@@ -1,5 +1,6 @@
 package me.hesovodoupe.message;
 
+import me.hesovodoupe.message.org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Message extends JavaPlugin {
@@ -19,6 +20,11 @@ public final class Message extends JavaPlugin {
 
         instance = this;
         saveDefaultConfig();
+
+        int pluginId = 20470;
+        Metrics metrics = new Metrics(this, pluginId);
+        metrics.addCustomChart(new Metrics.SimplePie("chart_id", () -> "My value"));
+        //plugin data
 
         this.getCommand("customsmessage").setExecutor(new reload());
         //commands
@@ -40,8 +46,6 @@ public final class Message extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        System.out.println("Plugin has stopped!");
-        //disable plugin
 
         this.getLogger().info("---------------------------------------");
         this.getLogger().info("CustomsMessage 1.4 version - DISABLE");
