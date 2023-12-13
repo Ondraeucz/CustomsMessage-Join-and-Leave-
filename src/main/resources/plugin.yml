@@ -1,5 +1,5 @@
 name: Message
-version: '1.3-SNAPSHOT'
+version: '1.7'
 main: me.hesovodoupe.message.Message
 api-version: '1.19'
 author: Ondraeucz
@@ -7,7 +7,6 @@ description: CustomsJoin and Leave message <3
 softdepend:
   - PlaceholderAPI
   - LuckPerms
-
 commands:
   customsmessage:
     description: /reload
