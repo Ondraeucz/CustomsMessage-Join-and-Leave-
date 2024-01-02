@@ -1,0 +1,31 @@
+#CUSTOMS MESSAGE (JOIN, LEAVE, FIRST)
+
+#Version plugin -> 2.1
+
+#If you don't know what to do, join our discord, where we will give you advice.
+# https://discord.gg/nE2YhqWzDZ
+
+# Used to let the plugin determine if your config is up-to-date, so a
+# warning can be printed in the server console. Only edit this if you
+# know what you are doing, or have just updated your config to the
+# newest version.
+config-version: '1.7'
+
+#Commands/Permissions:
+
+#/cm reload message.reload
+
+#Plugin settings
+Settings:
+  Joinmessage: true
+  Leavemessage: true
+  Firstmessage: true
+
+#Customs Join and Leave message
+First-Join: "&eThe player &6%player% &ehas joined the server for the first time"
+Join-Message: "&a[+] &7%player%"
+Leave-Message: "&c[-] &7%player%"
+
+#Plugin message settings
+Reload: "&7Reload plugin was successful."
+Prefix: "&e[&6CustomsMessage&e]"
