@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'me.hesovodoupe'
-version = '1.3-SNAPSHOT'
+version = '2.1'
 
 repositories {
     mavenCentral()
