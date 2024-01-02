@@ -1,8 +1,6 @@
-###################################
-#                                 #
-#         CustomsMessage          #
-#          Version 1.7            #
-###################################
+#CUSTOMS MESSAGE (JOIN, LEAVE, FIRST)
+
+#Version plugin -> 2.1
 
 #If you don't know what to do, join our discord, where we will give you advice.
 # https://discord.gg/nE2YhqWzDZ
@@ -11,18 +9,22 @@
 # warning can be printed in the server console. Only edit this if you
 # know what you are doing, or have just updated your config to the
 # newest version.
-config-version: '1.4'
+config-version: '1.7'
 
 #Commands/Permissions:
 
-#/reload message.reload
+#/cm reload message.reload
 
-#Edit first join message!
-First-join: "&ePlayer &6%player% &ejoined for the first time!"
+#Plugin settings
+Settings:
+  Joinmessage: true
+  Leavemessage: true
+  Firstmessage: true
 
 #Customs Join and Leave message
-Join-Message: "&a[+] %player%"
-Leave-Message: "&c[-] %player%"
+First-Join: "&eThe player &6%player% &ehas joined the server for the first time"
+Join-Message: "&a[+] &7%player%"
+Leave-Message: "&c[-] &7%player%"
 
 #Plugin message settings
 Reload: "&7Reload plugin was successful."
